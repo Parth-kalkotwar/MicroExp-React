@@ -71,7 +71,7 @@ const Input = ({
 
   const Component = type === 'textarea' ? 'textarea' : 'input';
   return (
-    <>
+    <div className="input-item">
       {label && <FormLabel labelHidden={labelHidden} id={props.id}>{label}</FormLabel>}
       <div
         className={wrapperClasses}
@@ -89,7 +89,7 @@ const Input = ({
         {children}
       </div>
       {hint && <FormHint status={status}>{hint}</FormHint>}
-    </>
+    </div>
   );
 }
 

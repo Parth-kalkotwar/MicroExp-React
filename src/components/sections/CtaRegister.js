@@ -14,7 +14,7 @@ const defaultProps = {
   split: false
 }
 
-const Cta = ({
+const CtaRegister = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -53,30 +53,32 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0">
-              Log In
+              Register
               </h3>
           </div>
           <div className="cta-action">
+            <Input id="firstName" type="text" label="First Name" placeholder="First Name" />
+            <Input id="lastName" type="text" label="Last Name" placeholder="Last Name" />
             <Input id="email" type="email" label="Email" placeholder="Email" />
             <Input id="password" type="password" label="Password" placeholder="Password" />
+            
               {/* <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
               </svg> */}
           </div>
-
           <div className="btn-login">
-                    <button type="submit" className="btn btn-dark btn-lg btn-block btn-1">Login</button>
-          </div>
-          <p className="forgot-password text-right">
-                    Haven't Registered Yet?   <a href="/register">Please Register</a>
-          </p>
+                    <button type="submit" className="btn btn-dark btn-lg btn-block btn-1">Register</button>
+            </div>
+            <p className="forgot-password text-right">
+                    Already Registered <a href="/login">Log in?</a>
+            </p>
         </div>
-        </div>
+      </div>
     </section>
   );
 }
 
-Cta.propTypes = propTypes;
-Cta.defaultProps = defaultProps;
+CtaRegister.propTypes = propTypes;
+CtaRegister.defaultProps = defaultProps;
 
-export default Cta;
+export default CtaRegister;
