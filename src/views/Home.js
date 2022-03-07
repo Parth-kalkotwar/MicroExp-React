@@ -4,16 +4,20 @@ import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
-import Cta from '../components/sections/Cta';
+// import { Carousel } from 'bootstrap';
+import HomeCarousel from '../components/sections/Testimonial';
+import ControlledCarousel from '../components/sections/Carousel';
+// import Cta from '../components/sections/Cta';
 
 const Home = () => {
 
   return (
     <>
       <Hero className="illustration-section-01" />
+      {/* <HomeCarousel topDivider /> */}
+      <Testimonial />
       <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
+      {/* <Carousel invertMobile topDivider imageFill className="illustration-section-02" /> */}
       {/* <Cta split /> */}
     </>
   );

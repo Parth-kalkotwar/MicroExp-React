@@ -52,7 +52,8 @@ const Image = ({
       placeholder.width = img.getAttribute('width');
       placeholder.height = img.getAttribute('height');
       placeholder.style.opacity = '0';
-      img.className && placeholder.classList.add(img.className);
+      // img.className && placeholder.classList.add(img.className);
+      // img.className
       placeholder.remove();
       img.style.display = '';      
     }
